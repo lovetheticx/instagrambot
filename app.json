@@ -1,0 +1,54 @@
+{
+    "name": "Instagram-Bot",
+    "description": "Telegram bot to manage your Instagram account.",
+    "keywords": [
+      "telegram",
+      "best",
+      "instagram",
+      "download",
+      "bot"
+    ],
+    "repository": "https://github.com/subinps/Instagram-Bot",
+    "env": {
+      "API_ID": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "27886180"
+      },
+      "API_HASH": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "10bbc3c3af349ac08d34bd34c139ea24"
+      },
+      "BOT_TOKEN": {
+        "description": "Your bot token from @BotFather",
+        "value": "6647217984:AAEoRF6Jc3r-x-DdMTHPX3I1lqyv9RELfTw"
+      },
+      "OWNER_ID": {
+        "description": "Enter Your Telegram id",
+        "value": "5464495002"
+      },
+      "INSTAGRAM_USERNAME": {
+        "description": "Enter your Instagram Username without @ , Example: samantharuthprabhuoffl",
+        "value": ""
+      },
+      "INSTA_SESSIONFILE_ID": {
+        "description": "Read README in GitHub",
+        "value": "",
+        "required": false
+      }
+      
+    },
+    "formation": {
+      "worker": {
+        "quantity": 1,
+        "size": "free"
+      }
+    },
+    "buildpacks": [
+      {
+        "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+      },
+      {
+        "url": "heroku/python"
+      }
+    ]
+  }
